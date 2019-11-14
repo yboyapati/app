@@ -16,6 +16,6 @@ spec:
   selector:
     io.kompose.service: phpmyadmin
   externalIPs: 
-      - 192.168.4.52
+      - 192.168.4.50
 status:
   loadBalancer: {}
