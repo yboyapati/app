@@ -10,6 +10,8 @@ metadata:
 spec:
   containers:
   - env:
+    - name: MYSQL_ROOT_PASSWORD
+      value: test
     - name: DB_DATABASE
       value: mysql
     - name: DB_HOST
