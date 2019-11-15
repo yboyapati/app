@@ -22,7 +22,7 @@ spec:
         - name: MYSQL_ROOT_PASSWORD
           value: test
         - name: PMA_HOST
-          value: db_mysql
+          value: db-mysql
         - name: PMA_PASSWORD
           value: test
         - name: PMA_PORT
