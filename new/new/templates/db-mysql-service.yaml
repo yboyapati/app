@@ -6,15 +6,15 @@ metadata:
     kompose.version: 1.16.0 (0c01309)
   creationTimestamp: null
   labels:
-    io.kompose.service: db-mysql
-  name: db-mysql
+    io.kompose.service: db_mysql
+  name: db_mysql
 spec:
   ports:
   - name: "3306"
     port: 3306
     targetPort: 3306
   selector:
-    io.kompose.service: db-mysql
+    io.kompose.service: db_mysql
   externalIPs: 
       - 192.168.4.50
 status:

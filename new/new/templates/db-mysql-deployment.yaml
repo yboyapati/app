@@ -6,8 +6,8 @@ metadata:
     kompose.version: 1.16.0 (0c01309)
   creationTimestamp: null
   labels:
-    io.kompose.service: db-mysql
-  name: db-mysql
+    io.kompose.service: db_mysql
+  name: db_mysql
 spec:
   replicas: 1
   strategy: {}
@@ -15,7 +15,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        io.kompose.service: db-mysql
+        io.kompose.service: db_mysql
     spec:
       containers:
       - args:
@@ -30,7 +30,7 @@ spec:
         - name: MYSQL_USER
           value: test
         image: mysql
-        name: db-mysql
+        name: db_mysql
         ports:
         - containerPort: 3306
         resources: {}
