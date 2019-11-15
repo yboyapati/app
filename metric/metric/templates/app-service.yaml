@@ -18,7 +18,7 @@ spec:
   links:
         - db-mysql
   selector:
-    io.kompose.service: app
+    io.kompose.service: db-mysql
   externalIPs: 
         - 192.168.4.50
 status:
