@@ -5,7 +5,7 @@ metadata:
     kompose.cmd: kompose convert
     kompose.version: 1.16.0 (0c01309)
   creationTimestamp: null
-  links:
+  depends_on:
      - db-mysql
   labels:
     io.kompose.service: app
@@ -15,8 +15,6 @@ spec:
   - name: "4040"
     port: 4040
     targetPort: 80
-  links:
-        - db-mysql
   selector:
     io.kompose.service: app
   externalIPs: 
